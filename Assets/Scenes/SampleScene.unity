@@ -205,7 +205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268956346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.61, y: -0.34, z: 0}
+  m_LocalPosition: {x: -2.55, y: -0.18, z: 0}
   m_LocalScale: {x: 0.7628543, y: 0.885817, z: 1}
   m_Children:
   - {fileID: 1319901966}
@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"movespeed","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"playerspeed","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"jumpForce","value":{"$content":300.0,"$type":"System.Single"},"$version":"A"},{"name":"jump","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"bulletPositionobj","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"movespeed","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"playerspeed","value":{"$content":3.0,"$type":"System.Single"},"$version":"A"},{"name":"jumpForce","value":{"$content":300.0,"$type":"System.Single"},"$version":"A"},{"name":"jump","value":{"$content":false,"$type":"System.Boolean"},"$version":"A"},{"name":"bulletPositionobj","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"hp","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"isDead","value":{"$content":true,"$type":"System.Boolean"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1319901965}
 --- !u!61 &268956352
@@ -1058,6 +1058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullet
       objectReference: {fileID: 0}
+    - target: {fileID: 1114594495069330670, guid: 39e46ecc7d66583478d058ae9682e209, type: 3}
+      propertyPath: m_TagString
+      value: Bullet
+      objectReference: {fileID: 0}
     - target: {fileID: 5789310010013047385, guid: 39e46ecc7d66583478d058ae9682e209, type: 3}
       propertyPath: _data._json
       value: '{"declarations":{"collection":{"$content":[{"name":"moveSpeed","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"moveDriection","value":{"$content":1.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
@@ -1108,3 +1112,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e46ecc7d66583478d058ae9682e209, type: 3}
+--- !u!1 &7923074209274902009 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1114594495069330670, guid: 39e46ecc7d66583478d058ae9682e209, type: 3}
+  m_PrefabInstance: {fileID: 7923074209274902008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &7923074209274902010
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7923074209274902009}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.73429286, y: 0.01005879}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.56, y: 1.28}
+    newSize: {x: 2.56, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.60859084, y: 0.5356483}
+  m_EdgeRadius: 0
